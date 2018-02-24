@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Photogram</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--bootstrap cdn-->
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script type="text/javascript" src="indexxjs.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="newcss.css">
+  <!--google font-->
+  <link href="https://fonts.googleapis.com/css?family=Grand+Hotel" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+</head>
+<body id="body">
+
+<nav class="navbar-default navbar navbar-inverse">
+  <div class="container-fluid">
+    
+
+    <div id="myNav" class="overlay">
+     
+      <div class="overlay-content">
+        <div class="header">
+            <a class="overlay-brand" id="brandname-collapse">Photogram</a>
+             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        </div><center>
+        <br><br>
+            <a href="#">HOME</a>
+          <hr>
+          <a href="#">ABOUT PHOTOGRAM</a>
+          <hr>
+          <a href="#">THE TEAM</a>
+          <hr>
+          <a href="#">CONTACT US</a>
+          <br>
+          
+          <h4>Already have an account?</h4>
+          <span><a href="#"><button id="loginbutton2" onclick="document.getElementById('id01').style.display='block'" ><img id="loginimg" src="user.png"><p id="logintext2">LOGIN</p></button></a></span>
+          </center>
+      </div>
+    </div>
+    <div class="navbar-header">
+    <span onclick="openNav()">
+    <button type="button" class="navbar-toggle collapsed" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+    </span>
+        <a class="navbar-brand" href="#">Photogram</a>
+        </div>
+
+
+         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-left">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT PHOTOGRAPH</a></li>
+            <li><a href="#">THE TEAM</a></li>
+            <li id="li4"><a href="#">CONTACT US</a></li>
+          </ul>
+          
+          <ul class="nav navbar-nav navbar-right">
+            <li id="accounttext">Already have an account?</li>
+            <li><a href="#"><button type="button" onclick="document.getElementById('id01').style.display='block'" id="loginbutton"><img id="loginimg" src="user.png"><p id="logintext">LOGIN</p></button></a></li>
+          </ul>
+            </div>
+      </div>
+</nav>
+
+<div id="id01" class="modal">
+<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">x</span>
+<form class="modal-content animate" action="/action_page.php">
+<div class="container2">
+	<h3>LOGIN TO YOUR ACCOUNT</h3><br>
+  <input type="text" placeholder="Enter Email" name="email" required>
+  <input type="password" placeholder="Enter Password" name="psw" required>
+      <!--<input type="checkbox" checked="checked"> Remember me*/--><br><br>
+      <center><button type="submit" class="signupbtn">LOGIN</button></center>
+      
+      <center><h5>OR</h5></center>
+      
+      <center><a href="#"><img src="google_login_small.png" id="img_google" height="35px"></a></center>
+</div>
+  
+</form>
+</div>
+
+
+<!--
+<div class="modal" id="myModal" role="dialog">
+<div class="modal-content">
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal">&times;</button>
+    <h4 class="modal-title">
+    <center>LOGIN TO YOUR ACCOUNT</center></h4>
+    <div class="modal-body">
+    <form>
+      <input type="text" name="Email_Address" placeholder="  Email Address">
+      <br>
+      <input type="text" name="Password" placeholder="  Password">
+      <br>
+      <input id="submit_btn" type="submit" value="LOGIN">
+      <br>
+      <center><h4>OR</h4></center>
+      <br>
+      <input type="submit" src="google_login_small.png">
+    </form>
+  </div>
+</div>
+  
+</div>
+  
+</div>
+
+--> 
+
+
+<div id="loginbar">
+   <li id="acctext">Already have an account?</li>
+   <li><a href="#"><button id="loginbutton2" onclick="document.getElementById('id01').style.display='block'"><img id="loginimg" src="user.png"><p id="logintext2">LOGIN</p></button></li>
+</div>
+
+
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <img src="img_1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="img_2.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="img_3.jpg" style="width:100%" >
+  </div>
+
+  <div class="mySlides fade">
+    <img src="img_4.jpg" style="width:100%">
+  </div>  
+</div>
+
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+
+</div>
+
+<div id="content"><center>
+
+  <div id="paragraph">
+  <p>"The best thing about memories is making them.."</p>
+  </div>
+  <p>Save all your special memories with us</p>
+  </center>
+</div>
+<div id="button"><center><button id="startedbutton">GET STARTED</button></center></div>
+
+
+
+
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+/*
+var modal = document.getElementById('id02');
+window.onclick = function(event){
+	 if (event.target == modal) {
+        modal.style.display = "none";
+	/*if(event.target == closebtn){
+		modal.style.display = "none";
+	}*/
+}
+
+</script>
+<script type="text/javascript" src="indexjs_photogram.js"></script>
+
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+
+</body>
+</html>
